@@ -47,28 +47,19 @@ function App() {
   return (
     <form onSubmit={formik.handleSubmit}>
       <label>First Name</label>
-      <input
-        type="text"
-        {...formik.getFieldProps("firstName")}
-      />
+      <input type="text" {...formik.getFieldProps("firstName")} />
       {formik.touched.firstName && formik.errors.firstName ? (
         <div>{formik.errors.firstName}</div>
       ) : null}
       <br />
       <label>Last Name</label>
-      <input
-        type="text"
-        {...formik.getFieldProps("lastName")}
-      />
+      <input type="text" {...formik.getFieldProps("lastName")} />
       {formik.touched.lastName && formik.errors.lastName ? (
         <div>{formik.errors.lastName}</div>
       ) : null}
       <br />
       <label>Email</label>
-      <input
-        type="email"
-        {...formik.getFieldProps("email")}
-      />
+      <input type="email" {...formik.getFieldProps("email")} />
       {formik.touched.email && formik.errors.email ? (
         <div>{formik.errors.email}</div>
       ) : null}
